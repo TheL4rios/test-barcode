@@ -52,7 +52,6 @@ export class AppComponent {
     });
 
     Quagga.onDetected((result: any) => {
-      Quagga.stop();
       this.code = result.codeResult.code;
     });
   }
