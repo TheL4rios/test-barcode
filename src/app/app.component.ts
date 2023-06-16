@@ -1,5 +1,4 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
-//@ts-ignore
 import Quagga from 'quagga';
 
 
@@ -21,7 +20,7 @@ export class AppComponent {
   }
 
   prepareQuagga() {
-    const quaggaConfig = {
+    const quaggaConfig: QuaggaJSConfigObject = {
       inputStream: {
         name: 'Live',
         target: '#quagga-area',
