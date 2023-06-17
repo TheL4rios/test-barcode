@@ -49,6 +49,7 @@ export class AppComponent {
           console.log("result", result.codeResult.code);
           this.code = result.codeResult.code as string;
       } else {
+        this.code = 'no detected'
           console.log("not detected");
       }
   });
