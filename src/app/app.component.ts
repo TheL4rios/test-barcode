@@ -32,7 +32,7 @@ export class AppComponent {
   }, (result) => {
     console.log(result);
     
-      if(result.codeResult) {
+      if(result && result.codeResult) {
           console.log("result", result.codeResult.code);
           this.code = result.codeResult.code as string;
       } else {
